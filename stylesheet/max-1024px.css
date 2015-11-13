@@ -1,0 +1,47 @@
+body {
+font-size:12pt;
+}
+
+#btn {
+width:100%;
+}
+
+.wrapper {
+width:92%;
+margin:2%;
+padding:2%;
+}
+
+p.btn-con {
+width:60%;
+}
+
+.parallax-window {
+min-height:80%;
+}
+
+.row-description {
+float:none;
+width:90%;
+}
+
+a.btn-item {
+width:76%;
+}
+
+#introduction {
+width:400px;
+top:40px;
+background-color:transparent;
+outline:0;
+}
+
+p {
+font-size:1em;
+line-height:1.6em;
+}
+
+.box {
+width:92%;
+padding:4%;
+}
