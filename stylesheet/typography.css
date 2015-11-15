@@ -62,12 +62,12 @@ font-weight:300;
 font-size:1em;
 line-height:1.6em;
 text-align:left;
-color:#6d6e70;
+color:#4C4F58;
 }
 
 .description {
 max-width:400px;
-color:#6d6e70;
+color:#4C4F58;
 margin:0 auto;
 }
 
@@ -93,6 +93,14 @@ line-height:1.2em;
 .thick {
 max-width:600px;
 font-weight: 300;
+}
+
+.white {
+color:#fff;
+}
+
+.dark {
+color:#232323;
 }
 
 .accent {
