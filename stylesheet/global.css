@@ -64,7 +64,7 @@ margin:0 auto;
 }
 
 .wrapper {
-width:1024px;
+max-width:1024px;
 overflow:hidden;
 box-shadow:0 0 2px rgba(0,0,0,.2);
 text-align:center;
@@ -75,13 +75,13 @@ padding:4%;
 
 .icon {
 display:inline-block;
-width:50px;
-height:50px;
+width:44px;
+height:44px;
 border-radius:50%;
 text-align:center;
-line-height:64px;
-color:#fff;
-margin:10px;
+line-height:58px;
+/*color:#fff;*/
+margin:8px;
 }
 
 .icon:hover {
@@ -98,7 +98,7 @@ margin: 0 auto 0 auto;
 }
 
 .parallax-window {
-background:url(.././images/bg.jpg) 50% 0 repeat fixed;
+background:url(.././images/end2.jpg) 50% 0 repeat;
 background-size:cover;
 min-height:800px;
 }
@@ -146,6 +146,13 @@ display:inline;
 a {
 color:#232323;
 text-decoration:none;
+}
+
+p a {
+text-decoration:underline;
+}
+p a:hover {
+color:#668bff;
 }
 
 a.link {
@@ -198,9 +205,9 @@ transition:.3s;
 
 .btn-page {
 display:inline-block;
-width:60%;
+width:100%;
 font-family:Roboto;
-font-size:1.4em;
+font-size:1.2em;
 font-weight:400;
 text-align:center;
 margin:0 auto;
@@ -232,7 +239,7 @@ margin:8% auto;
 }
 
 #abt {
-background:url(.././images/end2.jpg) 50% 0 repeat;
+background:url(../test9.jpg) 50% 0 repeat;
 background-size:cover;
 min-height:800px;
 /*background-color:#83bdda;*/
@@ -264,6 +271,10 @@ background-color:#55ACEE;
 
 #dribbble {
 background-color:#ea4c89;
+}
+
+#github {
+background-color:#171515;
 }
 
 /* index.html frame section starts */
@@ -447,7 +458,7 @@ width:60%;
 }
 
 .parallax-window {
-min-height:80%;
+min-height:540px;
 }
 
 .row-description {

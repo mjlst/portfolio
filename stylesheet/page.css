@@ -486,17 +486,17 @@ background-color:#fff;
 .scrolltotop {
 margin:0 auto;
 padding-top: 4%;
+color:#151141;
+font-size:1.2em;
+text-align:center;
 }
 
-.scrolltotop::after {
-content:"Top";
-display:block;
+.scrolltotop::before {
+content:"To the top";
+display:inline-block;
 font-family:Oswald;
-font-size:1em;
 font-weight:600;
-text-align:center;
 text-transform:uppercase;
-color:#151141;
 }
 
 @media screen and (min-width:601px) and (max-width:1024px) {

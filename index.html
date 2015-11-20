@@ -5,7 +5,7 @@ If you are looking for someone who is passionate about designing, making and bui
 Please enjoy! -->
 <head>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-	<title>Minjong Lee, Portfolio</title>
+	<title>Minjong Lee, Design</title>
 	<!-- Meta Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css">
@@ -21,6 +21,196 @@ Please enjoy! -->
 	  ga('send', 'pageview');
 
 	</script>
+	<style>
+.coverup {
+width: 960px;
+margin: 0 auto;
+position: relative;
+}
+
+.column {
+position: relative;
+float: left;
+width: 466px;
+height: 466px;
+margin-bottom: 14px;
+overflow: hidden;
+}
+.column.a {
+	height: 226px;
+}
+.column.a.b {
+	width: 226px;
+}
+.row {
+float: left;
+position: relative;
+padding-left: 7px;
+padding-right: 7px;
+}
+figure.block {
+width: 100%;
+height: 100%;
+margin:0;
+background-repeat:no-repeat;
+background-position: -100px 0;
+background-color: #668bff;
+display: table;
+-webkit-transition: opacity 1 ease-in-out;
+transition: opacity 1 ease-in-out;
+-moz-transition: opacity 1 ease-in-out;
+}
+
+figcaption {
+position: absolute;
+top:0;
+right:0;
+bottom:0;
+left:0;
+width: 100%;
+margin:auto;
+text-align: center;
+display: table;
+}
+
+figure.block img {
+width:100%;
+height:100%;
+margin:auto;
+opacity:1;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;
+-webkit-transform:scale(1.03);
+transform:scale(1.03);
+}
+
+figure.block:hover img {
+opacity:0.1;
+-webkit-transform:scale(1.08);
+transform:scale(1.08);
+}
+
+figure.block h6 {
+margin-top:1em;
+font-size: 1.1em;
+color: #fff;
+opacity:0;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;
+-webkit-transform:translate3d(0,20px,0);
+transform:translate3d(0,20px,0);
+}
+
+figure.block p.label {
+padding:.5em 0;
+margin:0 auto;
+font-size: 1.1em;
+text-align: center;
+opacity:0;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;
+-webkit-transform:translate3d(0,20px,0) scale(1.1);
+transform:translate3d(0,20px,0) scale(1.1);
+}
+
+figure.block:hover h6 {
+opacity:1;
+-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+transition:opacity 0.3s, transform 0.3s;	
+-webkit-transform:translate3d(0,0,0);
+transform:translate3d(0,0,0);
+}
+
+figure.block:hover p.label {
+opacity:1;
+-webkit-transform:translate3d(0,0,0) scale(1);
+transform:translate3d(0,0,0) scale(1);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	.coverup {
+		width: 708px;
+	}
+	.column {
+		width:344px;
+		height:344px;
+		margin-bottom: 10px;
+	}
+	.column.a {
+		height:167px;
+	}
+	.column.a.b {
+		width:167px;
+	}
+	
+	.row {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	figure.block h6 {
+	font-size: 1em;
+	}
+	figure.block p.label {
+	font-size: 1em;
+	}
+}
+@media screen and (max-width: 767px) and (min-width: 601px) {
+	.coverup {
+	width: 540px;
+	}
+	.column {
+	width:260px; 
+	height:260px;
+	margin-bottom: 10px;
+	}
+	.column.a {
+	height:125px;
+	}
+	.column.a.b {
+	width:125px;
+	}
+	.row {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	figure.block h6 {
+	font-size: 1em;
+	}
+	figure.block p.label {
+	font-size:1em;
+	opacity:0;
+	}
+}
+@media screen and (max-width: 600px) {
+	.coverup {
+	width: 360px;
+	}
+	.column {
+	width:350px;
+	height:350px;
+	margin-bottom: 10px;
+	}
+	.column.a {
+	height:170px;
+	}
+	.column.a.b {
+	width:170px;
+	}
+	.row {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	figure.block h6 {
+	font-size: 1em;
+	}
+	figure.block p.label {
+	font-size:1em;
+	opacity:0;
+	}
+}
+
+
+	</style>	
 </head>
 <body>
 <header class="nav">
@@ -36,12 +226,12 @@ Please enjoy! -->
 <!-- Intro division -->
 <div id="ntr" class="parallax-window" data-type="background" data-speed="10">
 	<div id="introduction">
-		<h2 class="greetings">Hello there!</h2>
-		<h2 class="greetings">I'm Minjong</h2>
-		<p class="contents dark">I am a San Francisco based UX Designer, who loves to explore, design, and create meaningful interactive experiences for people. I've been working in teams designing, researching and developing applications, and products.</p>
+		<h2 class="greetings">Minjong Lee,</h2>
+		<p class="contents dark">A San Francisco based UX Designer, who loves to explore, design, and create meaningful interactive experience. Currently working <a href="http://inflection.com">@Inflection,Inc.</a> designing a product that supports a secure web experience.</p>
 		<div class="btn">
-			<a id="btn-first" class="btn-item" href="#ftr">Take a look</a>
+			<a id="btn-first" class="btn-item" href="#ftr">Take a look at her projects</a>
 		</div>
+		<a href="#abt"><p class="btn-page">Or connect with Minjong<i class="fa fa-arrow-down" style="margin-left:12px;"></i></p></a>		
 	</div>
 </div>
 <!-- Featured Portfolio division -->
@@ -79,79 +269,112 @@ Please enjoy! -->
 <!-- Portfolio division -->
 <section id="prjcts" class="wrapper">
 	<div class="sub-title">Projects</div>
-	<p class="accent">Previous projects that I've been working on.</p>
-	<div class="cover">
-		<div class="grid">
-			<a href="rivermatters.html">
-			<figure class="frame">
-				<img src="./images/rm_thumb_new.jpg" alt="image">
-				<figcaption>
-					<h6>Rivermatters</h6>
-					<p class="label">Marketing website for Carnegie Science Center</p>
-				</figcaption>
-			</figure>
-			</a>
-			<a href="charton.html">
-			<figure class="frame">
-				<img src="http://minjonglee.com/charton/charton_thumbnail.jpg" alt="image">
-				<figcaption>
-					<h6>Chart On</h6>
-				<p class="label">Ten-seconds-long mirror interaction design</p>
-			</figcaption>
-			</figure>
-			</a>
-		</div>
-		<div class="grid">
-			<a href="waterworks.html">
-			<figure class="frame">
-				<img src="./images/ww_thumbnail.jpg" alt="image">
-				<figcaption>
-					<h6>Waterworks</h6>
-					<p class="label">Branding and logo</p>
-				</figcaption>
-			</figure>
-			</a>
-			<a href="ent.html">
-			<figure class="frame">
-				<img src="http://minjonglee.com/entertainment/ent_thumbnail.jpg" alt="image">
-				<figcaption>
-					<h6>Entertainment Design</h6>
-					<p class="label">Intense two-week-long game design projects</p>
-				</figcaption>
-			</figure>
-			</a>		
-		</div>
-		<div class="grid">
-			<a href="tripwith.html">
-			<figure class="frame">
-				<img src="./images/tw_thumbnail.jpg" alt="image">
-				<figcaption>
-					<h6>Trip With</h6>
-					<p class="label">Interface design mock-up for a group travel planning application</p>
-				</figcaption>
-			</figure>
-			</a>
-			<a href="">
-			<figure class="frame">			
-			<img src="./images/gd_thumb.jpg" alt="image">
-				<figcaption>
-					<h6>Graphic Design</h6>
-					<p class="label">Coming Soon</p>
-				</figcaption>
-			</figure>
-			</a>
-		</div>
+	<p class="accent">more projects that are proudly presented by Minjong</p>
+		<div class="coverup">
+			<div class="row">
+				<div class="column">
+					<a href="rivermatters.html">
+					<figure class="block" id="rm">
+						<img src="./general/rm_sq.png" alt="image">
+						<figcaption>
+							<h6>Rivermatters</h6>
+							<p class="label">Marketing website for Museum</p>
+						</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column a">
+					<a href="graphicdesign.html">
+					<figure class="block" id="gd">
+						<img src="./general/gd_sq.png" alt="image">
+						<figcaption>
+							<h6>Graphic Design</h6>
+							<p class="label">Coming Soon</p>
+						</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column a b">
+					<a href="waterworks.html">
+					<figure class="block" id="ww">
+						<img src="./general/ww_sq.png" alt="image">
+						<figcaption>
+							<h6>Waterworks</h6>
+							<p class="label">Branding and logo</p>
+						</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column a b">
+					<a href="tripwith.html">
+					<figure class="block" id="tw">
+						<img src="./general/tw_sq.png" alt="image">
+						<figcaption>
+							<h6>Trip With</h6>
+							<p class="label">Interface mock-up</p>
+						</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column a b">
+					<a href="charton.html">
+						<figure class="block" id="chrton">
+						<img src="./general/charton_sq.png" alt="image">
+							<figcaption>
+								<h6>Chart On</h6>
+							<p class="label">Interaction design</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column a b">
+					<a href="ent.html">
+					<figure class="block" id="ent">
+						<img src="./general/ent_sq.png" alt="image">
+						<figcaption>
+							<h6>Entertainment Design</h6>
+							<p class="label">Exploration</p>
+						</figcaption>
+					</figure>
+					</a>		
+				</div>
+			</div>
+			<div class="row">
+				<div class="column a">
+					<a href="datavis/temperaturemap.html">
+					<figure class="block" id="tm">
+						<img src="./general/tempmap_sq.png" alt="image">
+						<figcaption>
+							<h6>Temperature Map</h6>
+							<p class="label">Data visualization</p>
+						</figcaption>
+					</figure>
+					</a>
+				</div>
+			</div>
 	</div>
-</section>
+
+</section> 
 <section id="abt">
 	<div class="box">
 		<div class="sub-title">About Minjong</div>
-		<p class="contents thick dark">I recently graduated from Carnegie Mellon University. I previously worked as a graphic designer, which made me a pixel caring designer. Currently I am working as a UX Designer at Inflection in San Francisco bay area. I believe great user experience design starts from understanding who we are designing for. I love hiking in the woods and one of the most beautiful city in the world, Pittsburgh.
-		<br><span class="bold">Check out my <a class="link" href="http://minjonglee.com/general/Minjong_Lee_Resume_110415.pdf">resume <i class="fa fa-file-text-o"></i> </a></span> or <span class="bold">Click here to <a class="link" href="mailto:mjlst89@gmail.com">email me <i class="fa fa-at"></i> </a></span></p>
-		<h5>Connect with me on</h5>
-		<a href="https://www.linkedin.com/in/minjonglee/"><div id="linkedin" class="icon"><i class="fa fa-linkedin fa-2x"></i></div></a>
-		<a href="https://twitter.com/mjlst/"><div id="twitter" class="icon"><i class="fa fa-twitter fa-2x"></i></div></a>
-		<a href="https://dribbble.com/mjlst"><div id="dribbble" class="icon"><i class="fa fa-dribbble fa-2x"></i></div></a>
+		<p class="contents thick dark">Minjong is a designer by the day, a learner by the evening. She loves anything enables her to create intuitive and informative experience.
+		<br><span class="bold">Check out my <a class="link" href="http://minjonglee.com/general/Minjong_Lee_Resume_110415.pdf">Resume</a> or Click here to <a class="link" href="mailto:mjlst89@gmail.com">email me </a></span></p>
+		<h5>Connect with me elsewhere,</h5>
+		<a href="https://www.linkedin.com/in/minjonglee/"><div class="icon"><i class="fa fa-linkedin-square fa-2x"></i></div></a>
+		<a href="https://twitter.com/mjlst/"><div class="icon"><i class="fa fa-twitter-square fa-2x"></i></div></a>
+		<a href="https://github.com/mjlst"><div class="icon"><i class="fa fa-github-square fa-2x"></i></div></a>
+		<a href="https://dribbble.com/mjlst"><div class="icon"><i class="fa fa-dribbble fa-2x"></i></div></a>		
 	</div>
 </section>
 <footer>
