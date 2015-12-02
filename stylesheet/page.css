@@ -7,10 +7,6 @@ background-color:#e2f1fb;
 background-color:#F0F0F0;
 }
 
-.rm-bg {
-background-color:#FFFFFF;
-}
-
 .rm-int {
 top:0;
 width:734px;
@@ -50,6 +46,12 @@ background-repeat:no-repeat;
 background-image:url(.././rigit/rigit_int.png);
 }
 
+.gd-int {
+background:url(.././graphicdesign/gd_int.jpg) 50% 0 repeat;
+image-rendering: crisp-edges;
+background-size:cover;
+min-height:800px;
+}
 .ww-int {
 top:0;
 width:577px;
@@ -127,7 +129,7 @@ background-color:#f7f7f3;
 background-color:#ece6e1;
 }
 
-.waterworks-bg {
+.fff-bg {
 background-color:#FFFFFF;
 }
 /* end of page-color */
