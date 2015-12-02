@@ -96,7 +96,7 @@ Please enjoy! -->
 	.tip {
 	position: absolute;
 	margin:26px 0 20px 12px;
-	background-color:#fff;
+	background-color:#ff5757;
 	text-align:left;
 	font-size: .8em;
 	z-index:5;
@@ -127,30 +127,30 @@ Please enjoy! -->
 		<li><a href="./../rigit.html">See also : Rig-It Application&nbsp;&nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
 	</ul>
 </header>
-<div style="width: 80%; padding: 100px 10% 20px 10%; position:relative;">
-<h2>2014 San Francisco & Pittsburgh Temperature Map</h2>
-<p class="description cntr">Data collected from : <a class="linked" href="http://w2.weather.gov/climate/">http://w2.weather.gov/climate/</a> and
-<a class="linked" href="http://www.wunderground.com/history">http://www.wunderground.com/history</a></p>
-<p class="description cntr">Click button below to see temperature map of each city.
-	<div class="input inactive" name="pitButton" type="button" value="pittsburgh" onclick="updatePitData()" />
-		Pittsburgh
+	<div style="width: 80%; padding: 100px 10% 20px 10%; position:relative;">
+	<h2>2014 San Francisco & Pittsburgh Temperature Map</h2>
+	<p class="description cntr">Data collected from : <a class="linked" href="http://w2.weather.gov/climate/">http://w2.weather.gov/climate/</a> and
+	<a class="linked" href="http://www.wunderground.com/history">http://www.wunderground.com/history</a></p>
+	<p class="description cntr">Click button below to see temperature map of each city.
+		<div class="input inactive" name="pitButton" type="button" value="pittsburgh" onclick="updatePitData()" />
+			Pittsburgh
+		</div>
+		<div class="input active" name="sanButton" type="button" value="San Francisco" onclick="updateSanData()" />
+			San Francisco
+		</div>
+
 	</div>
-	<div class="input active" name="sanButton" type="button" value="San Francisco" onclick="updateSanData()" />
-		San Francisco
-	</div>
 
-</div>
+	<div style="width:1024px;margin:0 auto; position:relative;">
+		<div class="datavis" style="width:1024px;">
+			<div class="toolwrap" style="width:1024px;overflow:visible;">
 
-<div style="width:1024px;margin:0 auto; position:relative;">
-	<div class="wrapper" style="width:1024px;">
-		<div class="toolwrap" style="width:1024px;overflow:visible;">
-
+			</div>
 		</div>
 	</div>
-</div>
-<div style="width: 80%; padding: 20px 10% 20px 10%;">
-	<p>Designed and coded by Minjong Lee </p>
-</div>
+	<div style="width: 80%; padding: 20px 10% 20px 10%;">
+		<p>Designed and coded by Minjong Lee </p>
+	</div>
 <!-- D3 Chart scripting starts -->
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
@@ -194,7 +194,7 @@ d3.csv('2014_san_temp.csv', function(error, data) {
 			.key(function(d) {return monthFormat(d.Date);})
 			.entries(data);
 
-	var svg = d3.select('.wrapper').selectAll('div.months')
+	var svg = d3.select('.datavis').selectAll('div.months')
 			.data(tempPerMonth)
 		.enter().append('div')
 			.attr('class', function(d) {return 'months ' + d.key;})
