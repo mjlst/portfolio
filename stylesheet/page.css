@@ -46,12 +46,24 @@ background-repeat:no-repeat;
 background-image:url(.././rigit/rigit_int.png);
 }
 
-.gd-int {
-background:url(.././graphicdesign/gd_int.jpg) 50% 0 repeat;
-image-rendering: crisp-edges;
-background-size:cover;
-min-height:800px;
+.gd-bg {
+background-color:#414142;
 }
+
+.gd-int {
+top:50px;
+right:0;
+width:650px;
+height:436px;
+position:absolute;
+margin-top:-40px;  
+margin-left:-250px;
+z-index:0;
+background-size:650px 436px;
+background-repeat:no-repeat;
+background-image:url(.././graphicdesign/gd_brochure.png);
+}
+
 .ww-int {
 top:0;
 width:577px;
