@@ -8,9 +8,10 @@ Please enjoy! -->
 	<title>Minjong Lee, UX Designer</title>
 	<!-- Meta Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href=".././font-awesome-4.3.0/css/font-awesome.min.css">
 	<!-- Master stylesheet -->
-	<link rel="stylesheet" href="./../master.css">
+	<link rel="stylesheet" href="../master.css">
+	<link rel="stylesheet" href=".././stylesheet/page.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
 	<!-- Link necessary libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -128,9 +129,7 @@ Please enjoy! -->
 	</ul>
 </header>
 	<div style="width: 80%; padding: 100px 10% 20px 10%; position:relative;">
-	<h2>2014 San Francisco & Pittsburgh Temperature Map</h2>
-	<p class="description cntr">Data collected from : <a class="linked" href="http://w2.weather.gov/climate/">http://w2.weather.gov/climate/</a> and
-	<a class="linked" href="http://www.wunderground.com/history">http://www.wunderground.com/history</a></p>
+	<h2 class="header">2014 San Francisco & Pittsburgh Temperature Map</h2>
 	<p class="description cntr">Click button below to see temperature map of each city.
 		<div class="input inactive" name="pitButton" type="button" value="pittsburgh" onclick="updatePitData()" />
 			Pittsburgh
@@ -148,9 +147,24 @@ Please enjoy! -->
 			</div>
 		</div>
 	</div>
-	<div style="width: 80%; padding: 20px 10% 20px 10%;">
-		<p>Designed and coded by Minjong Lee </p>
+<section>
+	<a href="https://goo.gl/7gWdfT"><p class="btn-page"><i class="fa fa-arrow-right" style="margin-right:12px;"></i>Process on Medium</p></a>
+</section>
+<hr>
+<section>
+	<div class="box">
+		<div id="colophon">
+			<p>Temperature chart | October 2015</p>
+			<p>Data collected from <a class="linked" href="http://w2.weather.gov/climate/">National Weather Service</a> and <a class="linked" href="http://www.wunderground.com/history">Weather Underground</a></p>
+			<p>Data converted from <a class="linked" href="https://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a></p>
+		</div>
 	</div>
+	<div class="scrolltotop">&nbsp;&nbsp;<i class="fa fa-arrow-up"></i></div>	
+</section>
+<footer>
+	<p id="copyright">Copyright 2015. Designed & Coded by Minjong Lee.
+	<br>Font faces: Open Sans, Oswald & Roboto Slab</p>
+</footer>
 <!-- D3 Chart scripting starts -->
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 

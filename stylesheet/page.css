@@ -4,7 +4,7 @@ background-color:#e2f1fb;
 }
 
 .rigit-bg-2 {
-background-color:#F0F0F0;
+background-color:#ffffff;
 }
 
 .rm-int {
@@ -147,56 +147,73 @@ background-color:#FFFFFF;
 /* end of page-color */
 
 /*jssor slider style guide(https://github.com/jssor/slider) starts*/
-/* jssor slider bullet navigator skin 05 css */
-/*
-.jssorb05 div           (normal)
-.jssorb05 div:hover     (normal mouseover)
-.jssorb05 .av           (active)
-.jssorb05 .av:hover     (active mouseover)
-.jssorb05 .dn           (mousedown)
-*/
-.jssorb05 {
-	position: absolute;
+.prcsssldr {
+margin: 0 auto;
+width: 800px;
+height: 400px;
 }
-.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+.prcsscntnt {
+position: absolute;
+width: 34%;
+margin: 3%;
+}
+.prcssimg {
+position: absolute;
+width: 60%;
+right:0;
+}
+
+/* reference : jssor slider bullet navigator skin 05 css */
+.bb05, .db05 {
 	position: absolute;
-	/* size of bullet elment */
-	width: 10px;
-	height: 10px;
+	left:0;
+}
+.db05 div, .db05 div:hover, .db05 .av, .bb05 div, .bb05 div:hover, .bb05 .av {
+	position: absolute;
+	/* size of bullet element */
+	width: 7px;
+	height: 7px;
 	border-radius: 5px;
 	overflow: hidden;
 	cursor: pointer;
 }
-.jssorb05 div {background-color:#eeeeee;}
-.jssorb05 div:hover, .jssorb05 .av:hover {background-color:#FFCF47;}
-.jssorb05 .av {background-color:#ffcf47;}
-/* .jssorb05 .dn, .jssorb05 .dn:hover {background-color:#FFCF47;} */
+.bb05 div {border: 1px solid #f7f7f7;}
+.bb05 div:hover, .jssorb05 .av:hover {background-color:#f7f7f7;}
+.bb05 .av {background-color:rgba(247, 247, 247, .7);}
 
-/* jssor slider arrow navigator skin 12 css */
-/*
-.jssora12l                  (normal)
-.jssora12r                  (normal)
-.jssora12l:hover            (normal mouseover)
-.jssora12r:hover            (normal mouseover)
-.jssora12l.jssora12ldn      (mousedown)
-.jssora12r.jssora12rdn      (mousedown)
-*/
-.jssora12l, .jssora12r {
+.db05 div {border: 1px solid #2b3548 ;}
+.db05 div: hover, .db05 .av:hover {background-color:#2b3548;}
+.db05 .av {background-color:rgba(43, 53, 72, .7);}
+
+
+/* reference : jssor slider arrow navigator skin 12 css */
+.ba12l, .ba12r, .da12l, .da12r {
 	display: block;
 	position: absolute;
+	top:50%;
 	/* size of arrow element */
+	padding: 14px 8px;
 	width: 30px;
-	height: 50px;
+	border-radius: 24px;
 	cursor: pointer;
 	overflow: hidden;
 }
-.jssora12l {color:#eeeeee;}
-.jssora12r {color:#eeeeee;}
-.jssora12l:hover {color:#FFCF47;}
-.jssora12r:hover {color:#FFCF47;}
-/*.jssora12l.jssora12ldn { color: blue; }
-.jssora12r.jssora12rdn { color: blue; }*/
+.ba12l, .da12l {
+left: -60px;
+}
+.ba12r, .da12r {
+right: -60px;
+}
 
+.ba12l {color:rgba(247, 247, 247, .4); background-color:rgba(247,247,247, .1);}
+.ba12l:hover {color:rgba(247, 247, 247, .7);}
+.ba12r {color:rgba(247, 247, 247, .4); background-color:rgba(247,247,247, .1);}
+.ba12r:hover {color:rgba(247, 247, 247, .7);}
+
+.da12l {color:rgba(43, 53, 72, .4); background-color:rgba(43, 53, 72, .1);}
+.da12l:hover {color:rgba(43, 53, 72, .7);}
+.da12r {color:rgba(43, 53, 72, .4); background-color:rgba(43, 53, 72, .1);}
+.da12r:hover {color:rgba(43, 53, 72, .7);}
 /*jssor slider style guide(https://github.com/jssor/slider) ends*/
 
 /* anim starts */
@@ -454,6 +471,10 @@ img {
 width:90%;
 max-width:800px;
 margin:4% auto;
+}
+
+img.small {
+width:64%;
 }
 
 .block {
