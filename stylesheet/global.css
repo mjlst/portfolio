@@ -46,7 +46,7 @@ padding:8%;
 img {
 max-width:100%;
 max-height:100%;
-margin:4% auto;
+margin:2% auto;
 }
 
 hr {
@@ -184,6 +184,7 @@ position:relative;
 .btn-item {
 display:inline-block;
 width:92%;
+max-width:400px;
 border:1px solid #668bff;
 border-radius:4px;
 font-family:Oswald;
@@ -314,10 +315,6 @@ float:none;
 width:90%;
 }
 
-a.btn-item {
-width:76%;
-}
-
 #introduction {
 width:400px;
 top:40px;
@@ -330,6 +327,10 @@ font-size:1em;
 line-height:1.6em;
 }
 
+.mx-400 {
+max-width:400px;
+margin: 0 auto;
+}
 .box {
 width:92%;
 padding:4%;
@@ -366,11 +367,6 @@ min-height:80%;
 width:92%;
 margin:2%;
 padding:8% 2%;
-}
-
-
-a.btn-item {
-width:76%;
 }
 
 #introduction {
@@ -454,7 +450,7 @@ div.middle,.row-main,.row-description {
 width:96%;
 }
 
-.box,.accent {
+.box {
 width:92%;
 }
 }

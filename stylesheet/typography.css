@@ -86,7 +86,7 @@ text-align: center;
 }
 
 .summary {
-margin: 4% auto;
+margin: 2% auto;
 }
 
 .details {
@@ -181,5 +181,9 @@ line-height:1.4em;
 
 h5 {
 padding:12% 0;
+}
+
+.accent {
+width: 96%;
 }
 }
