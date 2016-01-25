@@ -35,15 +35,15 @@ background-image:url(.././images/ent-maze-int.png);
 
 .rigit-int {
 top:0;
-width:863px;
-height:700px;
+width:360px;
+height:748px;
 position:absolute;
-margin-top:-40px;  
-margin-left:-250px;
+margin-top:-80px;  
+margin-left:80px;
 z-index:0;
-background-size:863px 700px;
+background-size:360px 748px;
 background-repeat:no-repeat;
-background-image:url(.././rigit/rigit_int.png);
+background-image:url(.././rigit/rigit_int_012416.png);
 }
 
 .gd-bg {
