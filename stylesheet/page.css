@@ -516,7 +516,7 @@ text-align:center;
 .scrolltotop::before {
 content:"To the top";
 display:inline-block;
-font-family:Oswald;
+font-family:'Oswald',sans-serif;
 font-weight:600;
 text-transform:uppercase;
 }
