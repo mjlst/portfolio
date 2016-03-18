@@ -64,18 +64,6 @@ background-repeat:no-repeat;
 background-image:url(.././graphicdesign/gd_brochure.png);
 }
 
-.ww-int {
-top:0;
-width:577px;
-height:138px;
-position:absolute;
-margin-top:-140px;
-z-index:0;
-background-size:577px 138px;
-background-repeat:no-repeat;
-background-image:url(.././images/ww-int.png);
-}
-
 .tle-int {
 top:0;
 width:954px;
