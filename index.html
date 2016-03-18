@@ -11,7 +11,7 @@ Please enjoy! -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css">
 	<!-- Master stylesheet -->
-	<link rel="stylesheet" href="master.css">
+	<link rel="stylesheet" href="./stylesheet/global.css">
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,7 +28,6 @@ width: 960px;
 margin: 0 auto;
 position: relative;
 }
-
 .column {
 position: relative;
 float: left;
@@ -38,10 +37,10 @@ margin-bottom: 14px;
 overflow: hidden;
 }
 .column.a {
-	height: 226px;
+height: 226px;
 }
 .column.a.b {
-	width: 226px;
+width: 226px;
 }
 .row {
 float: left;
@@ -61,7 +60,6 @@ display: table;
 transition: opacity 1 ease-in-out;
 -moz-transition: opacity 1 ease-in-out;
 }
-
 figcaption {
 position: absolute;
 top:0;
@@ -73,7 +71,6 @@ margin:auto;
 text-align: center;
 display: table;
 }
-
 figure.block img {
 width:100%;
 height:100%;
@@ -84,13 +81,11 @@ transition:opacity 0.3s, transform 0.3s;
 -webkit-transform:scale(1.03);
 transform:scale(1.03);
 }
-
 figure.block:hover img {
 opacity:0.1;
 -webkit-transform:scale(1.08);
 transform:scale(1.08);
 }
-
 figure.block h6 {
 margin-top:1em;
 font-size: 1.1em;
@@ -101,7 +96,6 @@ transition:opacity 0.3s, transform 0.3s;
 -webkit-transform:translate3d(0,20px,0);
 transform:translate3d(0,20px,0);
 }
-
 figure.block p.label {
 padding:.5em 0;
 margin:0 auto;
@@ -114,7 +108,6 @@ transition:opacity 0.3s, transform 0.3s;
 -webkit-transform:translate3d(0,20px,0) scale(1.1);
 transform:translate3d(0,20px,0) scale(1.1);
 }
-
 figure.block:hover h6 {
 opacity:1;
 -webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
@@ -122,13 +115,108 @@ transition:opacity 0.3s, transform 0.3s;
 -webkit-transform:translate3d(0,0,0);
 transform:translate3d(0,0,0);
 }
-
 figure.block:hover p.label {
 opacity:1;
 -webkit-transform:translate3d(0,0,0) scale(1);
 transform:translate3d(0,0,0) scale(1);
 }
 
+.grtng {
+width:56%;
+max-width: 600px;
+}
+.grtng > p.ntron {font-size:1.2em;margin-top:2%;}
+.ntron {
+opacity: 0;
+}
+.icontip {
+position: absolute;
+top: -40px;
+width: 240px;
+padding: 12px 8px;
+color: #fff;
+font-family: Roboto;
+font-weight: 300;
+font-size: 1em;
+border-radius: 4px;
+left: -97px;
+opacity: 0;
+}
+.icontip::after {
+content:'';
+display:block;
+width:0;
+height:0;
+position:absolute;
+border-left: 6px solid transparent;
+border-bottom: 6px solid transparent;
+border-right: 6px solid transparent;
+left: 118px;
+top:40px;
+}
+.socialblck {
+margin-top: 4%;
+position:relative;
+display:inline-block;
+}
+.socialblck:nth-child(1) > .icontip::after  {
+border-top: 6px solid #0077B5;
+}
+.socialblck:nth-child(2) > .icontip::after  {
+border-top: 6px solid #42C0FB;
+}
+.socialblck:nth-child(3) > .icontip::after  {
+border-top: 6px solid #323131;
+}
+.socialblck:nth-child(4) > .icontip::after  {
+border-top: 6px solid #E94C88;
+}
+.socialblck:nth-child(5) > .icontip::after {
+border-top: 6px solid #0BE370;
+}
+.btn-intro {
+margin:4% 0;
+display:inline-block;
+font-family:Roboto;
+font-size:1.6em;
+font-weight:400;
+text-align:center;
+color: #00C6FF;
+}
+.btn-intro:hover {
+color: #FF4A00;
+transition: .3;
+-webkit-transition: .3;
+}
+#prfl {
+background-color: #fff;width:180px;height:180px;border:1px solid #eee;border-radius:50%;margin:0 8%;
+}
+#prfl > img {
+width:86%;margin:7%;
+}
+
+#scl {
+margin:0;padding:0;
+}
+#ntro {
+padding-top:10%;
+}
+h2.greetings {
+margin:0;line-height:1.7em;
+}
+.adj {
+font-size: 60%;vertical-align:top;padding-top:4px;
+}
+.quote {
+color: #00C6FF;
+font-family:'Roboto';
+font-weight:400;
+width: 80%;
+margin: 0 auto;
+font-size:1.6em;
+line-height:1.6em;
+text-align:center;
+}
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 	.coverup {
 		width: 708px;
@@ -144,7 +232,10 @@ transform:translate3d(0,0,0) scale(1);
 	.column.a.b {
 		width:167px;
 	}
-	
+	#ntro {
+	padding-top:6%;
+	}
+
 	.row {
 	padding-left: 5px;
 	padding-right: 5px;
@@ -154,6 +245,15 @@ transform:translate3d(0,0,0) scale(1);
 	}
 	figure.block p.label {
 	font-size: 1em;
+	}
+	.grtng, #prfl {
+	margin: 0 auto;
+	}
+	.socialblck {
+	margin-top: 0;
+	}
+	.box.index > img {
+	margin: 0 auto;
 	}
 }
 @media screen and (max-width: 767px) and (min-width: 601px) {
@@ -182,6 +282,9 @@ transform:translate3d(0,0,0) scale(1);
 	font-size:1em;
 	opacity:0;
 	}
+	.grtng, #prfl {
+	margin: 0 auto;
+	}
 }
 @media screen and (max-width: 600px) {
 	.coverup {
@@ -209,37 +312,53 @@ transform:translate3d(0,0,0) scale(1);
 	font-size:1em;
 	opacity:0;
 	}
+	.grtng {
+	width:90%;
+	}
+	.grtng, #prfl {
+	margin: 0 auto;
+	}
 }
-
-
 	</style>	
 </head>
-<body>
-<header class="nav">
-	<div id="mobile-nav"><i class="fa fa-bars fa-2x"></i></div>
-	<h1 id="logo"><a href="index.html">Minjong Lee Portfolio</a></h1>
-	<ul class="nav-group">
-		<li><a href="#ntr">Home</a></li>
-		<li><a href="#ftr">Featured</a></li>
-		<li><a href="#prjcts">Projects</a></li>
-		<li><a href="#abt">About</a></li>
-	</ul>
-</header>
+<body class="index">
 <!-- Intro division -->
-<div id="ntr" class="parallax-window" data-type="background" data-speed="10">
-	<div id="introduction">
-		<h2 class="greetings">Minjong Lee</h2>
-		<p class="contents dark">is a San Francisco based UX Designer, who loves to explore, design, and create meaningful interactive experience.</p>
-		<div class="btn">
-			<a id="btn-first" class="btn-item" href="#ftr">Take a look at her projects</a>
+<div id="ntr" data-type="background" data-speed="10">
+	<div class="box index flex" id="ntro">
+		<div class="item ntron" id="prfl"><img src="./images/profile_2016.png"></div>
+		<div class="grtng item">
+			<h2 class="greetings ntron">Hello, I'm Minjong. <br>I'm a <span class="typed"></span>.</h2>
+			<p class="ntron">Minjong is a San Francisco based UX Designer, who loves to explore idea and to design meaningful interactive experiences that improves people's daily life.<br>She is a designer by day, a learner by evening. She loves to learn anything enables her to create intuitive and informative experiences. <br>If you're interested in hiring her, Feel free to <a href="mailto:mjlst89@gmail.com">shoot her an E-mail</a>.</p>
 		</div>
-		<a href="#abt"><p class="btn-page">Or connect with Minjong<i class="fa fa-arrow-down" style="margin-left:12px;"></i></p></a>		
 	</div>
+			<div class="ntron" id="scl">
+				<div class="socialblck">
+					<div class="icontip">She connects with professionals.</div> 
+					<a class="sociallnk" href="https://www.linkedin.com/in/minjonglee/"><div class="icon"><i class="fa fa-linkedin fa-2x"></i></div></a>
+				</div>
+				<div class="socialblck">
+					<div class="icontip">She tweets excitements.</div>
+					<a class="sociallnk" href="https://twitter.com/mjlst/"><div class="icon"><i class="fa fa-twitter fa-2x"></i></div></a>
+				</div>
+				<div class="socialblck">
+					<div class="icontip">She codes ideas.</div>
+					<a class="sociallnk" href="https://github.com/mjlst"><div class="icon"><i class="fa fa-github fa-2x"></i></div></a>
+				</div>
+				<div class="socialblck">
+					<div class="icontip">She rebounds projects.</div>
+					<a class="sociallnk" href="https://dribbble.com/mjlst"><div class="icon"><i class="fa fa-dribbble fa-2x"></i></div></a>		
+				</div>
+				<div class="socialblck">
+					<div class="icontip">She shares insights.</div>
+					<a class="sociallnk" href="https://medium.com/@minjonglee"><div class="icon"><i class="fa fa-medium fa-2x"></i></div></a>
+				</div>
+			</div>
+			<a href="#prjcts"><p class="btn-intro ntron">Curious about her work?<i class="fa fa-angle-down" style="margin-left:12px;"></i></p></a>		
 </div>
 <!-- Featured Portfolio division -->
 <section id="ftr" class="wrapper">
 	<div class="sub-title">Featured</div>
-	<div class="box flex">
+	<div class="box index flex">
 		<img class="row-main item" src="./images/bookclip_thumbnail2.png" alt="example">
 		<div class="row-description item">
 			<h3>Bookclilp, mobile library<br>management system</h3>
@@ -248,7 +367,7 @@ transform:translate3d(0,0,0) scale(1);
 		</div>
 	</div>
 	<hr>
-	<div class="box flex">
+	<div class="box index flex">
 		<img class="row-main" src="http://minjonglee.com/bcapp/bc_thumbnail.jpg" alt="example">
 		<div class="row-description">
 			<h3>A guide for contraception<br>& birth control</h3>
@@ -257,7 +376,7 @@ transform:translate3d(0,0,0) scale(1);
 		</div>
 	</div>
 	<hr>
-	<div class="box flex">
+	<div class="box index flex">
 		<img class="row-main" src="./images/rigit_thumbnail4.png" alt="example">
 		<div class="row-description">
 			<h3>Rig-it, Mobile Application for Emergency Medical Technicians</h3>
@@ -366,18 +485,11 @@ transform:translate3d(0,0,0) scale(1);
 			</div>
 	</div>
 
-</section> 
-<section id="abt">
-	<div class="box">
-		<div class="sub-title">About Minjong</div>
-		<p class="contents thick dark">Minjong is a designer by day, a learner by evening. She loves to learn anything enables her to create intuitive and informative experience.
-		<br><span class="bold">Check out her <a class="link" href="./general/Lee_Minjong_resume_16.pdf">Resume</a> or Click here to <a class="link" href="mailto:mjlst89@gmail.com">email her</a>.</span></p>
-		<h5>Connect with her also in,</h5>
-		<a href="https://www.linkedin.com/in/minjonglee/"><div class="icon"><i class="fa fa-linkedin-square fa-2x"></i></div></a>
-		<a href="https://twitter.com/mjlst/"><div class="icon"><i class="fa fa-twitter-square fa-2x"></i></div></a>
-		<a href="https://github.com/mjlst"><div class="icon"><i class="fa fa-github-square fa-2x"></i></div></a>
-		<a href="https://dribbble.com/mjlst"><div class="icon"><i class="fa fa-dribbble fa-2x"></i></div></a>		
-		<a href="https://medium.com/@minjonglee"><div class="icon"><i class="fa fa-medium fa-2x"></i></div></a>
+</section>
+<section class="bg-lb">
+	<div>
+		<p class="quote">
+		<i class="fa fa-quote-left fa-1x adj"></i> The best way to predict your future is to create it <i class="fa fa-quote-right fa-1x adj"></i><br>― Abraham Lincoln</p>
 	</div>
 </section>
 <footer>
@@ -385,9 +497,27 @@ transform:translate3d(0,0,0) scale(1);
 	<br>Font faces: Roboto & Oswald</p>
 </footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- 	<script src="./js/jquery.min.js"></script> -->
 	<script src="./js/enquire.min.js" asyn></script>
-	<script src="./js/parallax.js-1.3.1/parallax.min.js" asyn></script>
+	<script src="./js/typed.js"></script>
 <script>
+var colorsets = ['#0077B5', '#42C0FB', '#323131', '#E94C88', '#0BE370'];
+$('.icontip').each(function(i) {
+	$(this).css({'background-color':colorsets[i]});
+});
+
+$('.sociallnk').hover(function(i) {
+	$(this).prev().css({'opacity':1});
+}, function(i) {
+	$(this).prev().css({'opacity':0});
+});
+$('.sociallnk').each(function(i) {
+	$(this).hover(function() {
+		$(this).find('.icon').css({'color': colorsets[i]});
+	}, function() {
+		$(this).find('.icon').css({'color': '#BFC0C4'});//Somehow animate not working here?
+	});
+});
 var jump = function(e) {
 	if (e) {
 		e.preventDefault();
@@ -399,13 +529,27 @@ var jump = function(e) {
 	$('html, body').animate( {
 		// Get the top position of the target element
 		scrollTop: $(target).offset().top
-	},600,function() {
+	},900,function() {
 		location.hash = target;
 	});
 }
 $(document).ready(function () {
+	//typed.js installation
+	$(function(){
+			$(".typed").typed({
+			strings: ["UX Designer", "Rapid Prototyper", "Team Player", "UX Designer"],
+			typeSpeed: 0.5
+		});
+	});
+	// Fade intro elements in 
+	var time = 0;
+	$('.ntron').each(function() {
+		$(this).delay(time).animate({'opacity':1}, 500);
+		time += 300;
+	});
 	// ** Fade the website in **
 	$('body').css('opacity', '0').fadeTo(600, 1, 'swing');
+
 	// ** Jump **
 	$('a[href^=#]').bind("click", jump);
 	if (location.hash) {
