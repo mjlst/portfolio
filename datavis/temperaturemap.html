@@ -371,7 +371,13 @@ function updateSanData() {
 	d3.selectAll('div.tip').data(dataset).html(function(d) {return d.Date +'<span class="temp"><br>Max:  ' + d.Max + '&#8457;<br>Min: ' + d.Min + '&#8457;</span>';});
 });
 };
-
+$(document).ready(function () {
+	// ** Scroll Top, Process Button, Hide this **
+	$('.scrolltotop').click(function() {
+		$('html, body').animate({scrollTop : 0}, 1000);
+		return false;
+	});
+});
 </script>
 <!-- D3 Chart scripting ends -->
 </body>

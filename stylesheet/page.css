@@ -511,6 +511,7 @@ padding-top: 4%;
 color:#151141;
 font-size:1.2em;
 text-align:center;
+cursor:pointer;
 }
 
 .scrolltotop::before {
