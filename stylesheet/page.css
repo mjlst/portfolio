@@ -140,9 +140,6 @@ background-color:#9ddcf9;
 background-color:#FFFFFF;
 }
 
-.ids-bg {
-background-color:#595f6f;
-}
 .ids-bg-2 {
 background-color:#ececed;
 }
@@ -244,9 +241,7 @@ opacity: 0;
 	overflow-x:hidden;
 	background:url(.././ids/stockimage.png) 50% 0 repeat;
 	background-size:cover;
-	}
-	.ids-int > div {
-	margin-top:16%
+	background-color: #595f6f;
 	}
 	.padzero {
 	margin:0;padding:0;
