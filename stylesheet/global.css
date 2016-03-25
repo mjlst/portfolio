@@ -392,8 +392,8 @@ section {
 width:100%;
 padding:8% 0;
 overflow:hidden;
+position:relative;/* Just added if it causes problem remove it */
 }
-
 .icon {
 display:inline-block;
 width:44px;
