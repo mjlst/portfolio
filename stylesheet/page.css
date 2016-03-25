@@ -20,6 +20,25 @@ background-repeat:no-repeat;
 background-image:url(.././images/rm-intro.png);
 }
 
+.idsadmin-int {
+top:24%;
+right:4%;
+width:720px;
+height:480px;
+position:absolute;
+margin-top:0px;  
+margin-left:450px;
+z-index:0;
+background-size:720px 480px;
+background-repeat:no-repeat;
+background-image:url(.././ids/adminportal.png);
+}
+
+.ids-int {
+background:url(.././ids/stockimage.png) 50% 0 repeat;
+background-size:cover;
+}
+
 .maze-int {
 top:0;
 width:872px;
@@ -93,6 +112,11 @@ background:url(.././images/bookclip_int_bg.png) 50% 0 repeat;
 background-size:cover;
 }
 
+.idsredesign-int {
+background:url(.././ids/idsredesign_int.png) 50% 0 repeat;
+background-size:cover;
+}
+
 .bcapp-bg {
 background-color:#F9F4EF;
 }
@@ -120,6 +144,14 @@ background-color:#9ddcf9;
 .fff-bg {
 background-color:#FFFFFF;
 }
+
+.ids-bg {
+background-color:#595f6f;
+}
+.ids-bg-2 {
+background-color:#ececed;
+}
+
 /* end of page-color */
 
 /*jssor slider style guide(https://github.com/jssor/slider) starts*/
@@ -173,6 +205,7 @@ right:0;
 	border-radius: 24px;
 	cursor: pointer;
 	overflow: hidden;
+	z-index: 5;
 }
 .ba12l, .da12l {
 left: -60px;
@@ -379,6 +412,11 @@ section {
 width:100%;
 padding:8% 0;
 overflow:hidden;
+position:relative;/* Just added if it causes problem remove it */
+}
+
+.visible {
+overflow: visible;
 }
 
 #prcss {
@@ -391,7 +429,8 @@ margin:0 auto;
 }
 
 .bg {
-min-height:600px;
+min-height:450px;
+box-shadow:0 1px 2px rgba(0,0,0,0.2)
 }
 
 .separate-bg {
@@ -408,6 +447,25 @@ z-index:2;
 float:right;
 width:50%;
 z-index:2;
+}
+
+.half-full-lft {
+float:left;
+width:50%;
+z-index:2;
+}
+.half-full-rt {
+float:left;
+width:50%;
+z-index:2;
+}
+
+
+.sixty {
+width: 60%;
+}
+.fourty {
+width: 40%;
 }
 
 .clmn-two-lft {
@@ -449,7 +507,12 @@ max-width:800px;
 }
 
 img.small {
-width:64%;
+width:72%;
+margin: 0 auto;
+}
+img.large {
+max-width: 1280px;
+width:90%;
 }
 
 .block {
@@ -463,7 +526,6 @@ width:1024px;
 margin:0 auto;
 }
 
-
 h2.title {
 text-align:center;
 color:#232323;
@@ -473,11 +535,16 @@ line-height:1.6em;
 
 h4.left {
 text-align:left;
-margin:2% 4%;
+margin:2% auto;
 }
 
-.description {
-margin:0 4%;
+.left {
+text-align:left;
+}
+
+.passage {
+font-size:1.2em;
+line-height:1.7em;
 }
 
 .contents {
@@ -500,6 +567,22 @@ color:#151141;
 font-size:1.2em;
 text-align:center;
 cursor:pointer;
+}
+
+.fixedtotop {
+position: fixed;
+margin:0 auto;
+bottom: 20px;
+right: 20px;
+font-size:1.2em;
+text-align:center;
+}
+.fixedtotop::before {
+content:"To the top";
+display:inline-block;
+font-family:'Oswald',sans-serif;
+font-weight:600;
+text-transform:uppercase;
 }
 
 .scrolltotop::before {
@@ -526,9 +609,15 @@ float:none;
 margin:0 auto;
 }
 
-.box-int,.half-two-lft,.half-two-rt {
+.half-two-lft,.half-two-rt {
 width:99%;
 margin:.5%;
+}
+.box-int {
+width:92%;
+}
+.option {
+width:100%;
 }
 }
 
@@ -571,9 +660,17 @@ left: -100px;
 .cntr,#colophon {
 width:92%;
 }
+.option {
+width:100%;
+}
 
-.clmn-two-lft,.clmn-two-rt,.clmn-three-lft,.clmn-three-cntr,.clmn-three-rt {
-width:98%;
+.clmn-two-lft,.clmn-two-rt{
+width:92%;
+float:none;
+margin:0 auto;
+}
+.clmn-three-lft,.clmn-three-cntr,.clmn-three-rt {
+width:100%;
 float:none;
 margin:0 auto;
 }
