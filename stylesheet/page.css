@@ -222,29 +222,6 @@ right: -60px;
 .hidethis {
 opacity: 0;
 }
-/* Applies only in ids.html */
-	.option {
-	padding:4% 0;
-	overflow: hidden;
-	}
-	.name {
-	position:absolute;
-	margin:0;
-	padding:0;
-	z-index:2;
-	width:100%;
-	}
-	.ids-int {
-	margin:0;
-	overflow-x:hidden;
-	background:url(.././ids/stockimage.png) 50% 0 repeat;
-	background-size:cover;
-	background-color: #595f6f;
-	}
-	.padzero {
-	margin:0;padding:0;
-	}
-/* Applies only in ids.html */
 
 .moh-anim {
 position: relative;
