@@ -323,7 +323,7 @@ border:none;
 background-color:rgba(0,0,0,0.2);
 margin:0 auto;
 }
-#admin, #redesign {
+#admin {
 display: none;
 }
 .steps {
@@ -570,6 +570,10 @@ margin: 0 auto 6% auto;
 
 .pad {
 padding: 8% auto;
+}
+
+.pad-zero {
+padding: 3% 0;
 }
 
 #abt {
