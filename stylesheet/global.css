@@ -287,7 +287,7 @@ position:fixed;
 width:92%;
 height:51px;
 padding:0 4%;
-z-index:5;
+z-index:999;
 }
 
 .bged {
@@ -636,6 +636,7 @@ margin: 2%;
 flex-direction:column;
 -webkit-flex-direction:column;
 }
+
 }
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {
