@@ -24,7 +24,174 @@ Please enjoy! -->
 	  ga('send', 'pageview');
 
 	</script>
+	<style>
+	/* anim starts */
+	.hidethis {
+	opacity: 0;
+	}
+	.moh-anim {
+	position: relative;
+	top: 100px;
+	left: 0;
+	width: 400px;
+	height: 400px;
+	}
+	.heart {
+	top: 40px;
+	margin-left:38px;
+	width: 133px;
+	height: 130px;
+	position: absolute;
+	z-index:1;
+	background-size: 133px 130px;
+	background-repeat: no-repeat;
+	background-image:url(.././images/heart.png);
+	animation: pumping 1s ease-in-out forwards infinite;
+	-o-animation: pumping 1s ease-in-out forwards infinite;
+	-ms-animation: pumping 1s ease-in-out forwards infinite;
+	-moz-animation: pumping 1s ease-in-out forwards infinite;
+	-webkit-animation: pumping 1s ease-in-out forwards infinite;
+	}
+	.circle {
+	position: absolute;
+	margin-top:0;
+	margin-left:0;
+	z-index:0;
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	background-color: #FFF;
+	border-radius: 100px;
+	}
+	.one {
+	animation: appear-one 2s forwards infinite;
+	-webkit-animation: appear-one 2s forwards infinite;
+	}
+	.two {
+	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	animation: appear-two 2s forwards infinite;
+	-webkit-animation: appear-two 2s forwards infinite;
+	}
+	.three {
+	transform: scale(2);
+	-webkit-transform: scale(2);
+	-o-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	animation: appear-three 2s forwards infinite;
+	-webkit-animation: appear-three 2s forwards infinite;
+	}
+	@keyframes appear-one {
+	0% {
+	opacity: 0;
+	}
+	25% {
+	opacity: .4;
+	}
+	100% {
+	opacity: 0;
+	}
+	}
+	@keyframes appear-two {
+	0% {
+	opacity: 0;
+	}
+	50% {
+	opacity: .4;
+	}
+	100% {
+	opacity: 0;
+	}
+	}
+	@keyframes appear-three {
+	0% {
+	opacity: 0;
+	}
+	75% {
+	opacity: .4;
+	}
+	100% {
+	opacity: 0;
+	}
+	}
+	@-webkit-keyframes appear-one {
+	0% {
+	opacity: 0;
+	}
+	25% {
+	opacity: .4;
+	}
+	100% {
+	opacity: 0;
+	}
+	}
+	@-webkit-keyframes appear-two {
+	0% {
+	opacity: 0;
+	}
+	50% {
+	opacity: .4;
+	}
+	100% {
+	opacity: 0;
+	}
+	}
+	@-webkit-keyframes appear-three {
+	0% {
+	opacity: 0;
+	}
+	75% {
+	opacity: .4;
+	}
+	100% {
+	opacity: 0;
+	}
+	}
+	@keyframes pumping {
+	0% {
+	transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	}
+	50% {
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	}
+	100% {
+	transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	}
+	}
+	@-webkit-keyframes pumping {
+	0% {
+	-webkit-transform: scale(1);
+	}
 
+	50% {
+	-webkit-transform: scale(1.1);
+	}
+
+	100% {
+	-webkit-transform: scale(1);
+	}
+	}
+	@media screen and (max-width:600px) {
+	/* anim starts */
+	.moh-anim {
+	left: -100px;
+	}
+	}
+	/* anim ends */
+	</style>
 </head>
 <body>
 <header class="nav bged">

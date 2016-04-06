@@ -122,7 +122,6 @@ opacity:1;
 -webkit-transform:translate3d(0,0,0) scale(1);
 transform:translate3d(0,0,0) scale(1);
 }
-
 .grtng {
 width:56%;
 max-width: 600px;
@@ -130,6 +129,31 @@ max-width: 600px;
 .grtng > p.ntron {font-size:1.2em;margin-top:2%;}
 .ntron {
 opacity: 0;
+}
+#ntr {
+background: linear-gradient(100deg, #CCF8FF 40%, #fff 30%);
+background: -webkit-linear-gradient(100deg, #CCF8FF 40%, #fff 30%);
+background: -moz-linear-gradient(100deg, #CCF8FF 40%, #fff 30%);
+background: -o-linear-gradient(100deg, #CCF8FF 40%, #fff 30%);
+background: -ms-linear-gradient(100deg, #CCF8FF 40%, #fff 30%);
+min-height:640px;
+}
+.ttl {
+width:300px;
+font-family:'Oswald', serif;
+font-weight:400;
+font-size:1.8em;
+line-height:2em;
+text-align:center;
+text-transform:uppercase;
+color:#232323;
+margin:2% auto;
+}
+.ttl::before,.ttl::after {
+content:"";
+height:1px;
+display:block;
+background:#232323;
 }
 .icontip {
 position: absolute;
@@ -302,6 +326,9 @@ margin:20px 0;
 	}
 }
 @media screen and (max-width: 600px) {
+	h2.greetings {
+	font-size: 2em;
+	}
 	.coverup {
 	width: 360px;
 	}
@@ -373,7 +400,7 @@ margin:20px 0;
 </div>
 <!-- Portfolio division -->
 <section id="prjcts" class="wrapper">
-	<div class="sub-title">Projects</div>
+	<div class="ttl">Projects</div>
 <!-- 	<p class="accent">more projects that are proudly presented by Minjong</p> -->
 		<div class="coverup">
 			<div class="row">
@@ -499,7 +526,7 @@ margin:20px 0;
 	</div>
 
 </section>
-<section class="bg-lb">
+<section class="fff-bg">
 	<div>
 		<p class="quote">
 		<i class="fa fa-quote-left fa-1x adj"></i> The best way to predict your future is to create it <i class="fa fa-quote-right fa-1x adj"></i><br>― Abraham Lincoln</p>

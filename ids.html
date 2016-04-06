@@ -50,11 +50,11 @@ Please enjoy! -->
 	transform-origin: top left;
 	border: 1px solid #cbced5;
 	}
-	.zoomi {
-	cursor: zoom-in;
+	#admin {
+	display: none;
 	}
+	
 
-@-webkit-keyframes a{0%{-webkit-transform:translate(-50%,-50%) rotateX(0) rotateY(0);transform:translate(-50%,-50%) rotateX(0) rotateY(0)}50%{-webkit-transform:translate(-50%,-50%) rotateX(-180deg) rotateY(0);transform:translate(-50%,-50%) rotateX(-180deg) rotateY(0)}to{-webkit-transform:translate(-50%,-50%) rotateX(-180deg) rotateY(-180deg);transform:translate(-50%,-50%) rotateX(-180deg) rotateY(-180deg)}}@keyframes a{0%{-webkit-transform:translate(-50%,-50%) rotateX(0) rotateY(0);transform:translate(-50%,-50%) rotateX(0) rotateY(0)}50%{-webkit-transform:translate(-50%,-50%) rotateX(-180deg) rotateY(0);transform:translate(-50%,-50%) rotateX(-180deg) rotateY(0)}to{-webkit-transform:translate(-50%,-50%) rotateX(-180deg) rotateY(-180deg);transform:translate(-50%,-50%) rotateX(-180deg) rotateY(-180deg)}}.fluidbox{outline:none}.fluidbox__overlay{background-color:hsla(0,0%,100%,.85);cursor:pointer;cursor:zoom-out;opacity:0;pointer-events:none;position:fixed;top:0;left:0;bottom:0;right:0;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.fluidbox--opened .fluidbox__overlay{pointer-events:auto}.fluidbox__wrap{background-position:center center;background-size:cover;margin:0 auto;position:relative;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.fluidbox--closed .fluidbox__thumb,.fluidbox__thumb{-webkit-transition:opacity 0s ease-in-out 0s;transition:opacity 0s ease-in-out 0s}.fluidbox__ghost{background-size:100% 100%;background-position:center center;background-repeat:no-repeat;position:absolute;transition-duration:0s,.5s;transition-delay:0s;-webkit-transition-property:opacity,-webkit-transform;transition-property:opacity,-webkit-transform;transition-property:opacity,transform}.fluidbox--opened .fluidbox__ghost{cursor:pointer;cursor:zoom-out}.fluidbox--closed .fluidbox__ghost{-webkit-transition-delay:.5s,0s;transition-delay:.5s,0s}.fluidbox__loader{opacity:0;-webkit-perspective:200px;perspective:200px;pointer-events:none;position:absolute;top:0;left:0;bottom:0;right:0}.fluidbox__loader:before{background-color:hsla(0,0%,100%,.85);content:'';-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:absolute;top:50%;left:50%;width:20%;padding-bottom:20%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transition-duration:.5s;transition-duration:.5s;-webkit-transition-delay:0s;transition-delay:0s}.fluidbox--loading .fluidbox__loader{opacity:1;-webkit-transition:opacity .5s ease-in-out .5s;transition:opacity .5s ease-in-out .5s}.fluidbox--loading .fluidbox__loader:before{-webkit-animation:a 1s 0s infinite ease-in-out forwards;animation:a 1s 0s infinite ease-in-out forwards}
 /* Applies only in ids.html */
 </style>
 </head>
@@ -78,7 +78,7 @@ Please enjoy! -->
 		</div>
 	</div>
 </section>
-<section class="pad-zero">
+<section class="zero">
 	<div>
 		<div class="half-full-lft item ids-bg-2 option">
 			<a href="#redesignon"><h2 id="redesignon" class="untouched btn-page">IdentitySmart Revamp<i class="fa fa-long-arrow-right" style="margin-left: 12px;"></i></h2></a>
@@ -89,7 +89,7 @@ Please enjoy! -->
 	</div>
 </section>
 	
-<section id="admin" class="pad-zero">
+<section id="admin" class="zero">
 	<section class="fff-bg idsadmin-int visible flex">
 		<div class="box-int item flex">
 			<div class="half-two-lft item">
@@ -109,10 +109,10 @@ Please enjoy! -->
 	</section>
 	<section class="fff-bg">
 		<div class="box flex">
-			<div class="half-two-lft sixty item">
+			<div class="half-two-lft cntr item">
 				<img class="small" src="./ids/adminwire1.png">
 			</div>
-			<div class="half-two-rt fourty item">
+			<div class="half-two-rt block item">
 				<h3 class="left">Administrator’s dashboard flow</h3>
 				<div class="steps"><span class="step">1</span><p class="paragraph">Following information is required to enroll: company name, email address, phone number, name, an address for the portal and the end-users, pre-generated 1st password</p></div>
 				<div class="steps"><span class="step">2</span><p class="paragraph">Service charge will be billed to administrator's email based on the number of redeemed accounts.</p></div>
@@ -151,10 +151,10 @@ Please enjoy! -->
 	</section>
 	<section class="fff-bg">
 		<div class="box flex">
-			<div class="half-two-lft sixty item">
+			<div class="half-two-lft cntr item">
 				<img class="small" src="./ids/adminwire2.png">
 			</div>
-			<div class="half-two-rt fourty item">
+			<div class="half-two-rt block item">
 				<h3 class="left">End-user PIN redemption flow</h3>
 				<div class="steps"><span class="step">1</span><p class="paragraph">The value of IdentitySmart subscription should be explained in this flow.</p></div>
 				<div class="steps"><span class="step">2</span><p class="paragraph">By submitting correct PIN Code and account information, users can start service activation.</p></div>
@@ -171,7 +171,7 @@ Please enjoy! -->
 
 </section>
 	
-<section id="redesign" class="pad-zero">
+<section id="redesign" class="zero">
 	<section class="idsredesign-int ids-bg-2 flex">
 		<div class="box-int item flex">
 			<div class="half-two-lft item">
@@ -202,22 +202,22 @@ Please enjoy! -->
 	<section>
 		<div class="narrow">
 			<h2 class="header left">Checkout flow redesign</h2>
-			<p class="passage left">Previously, IdentitySmart was a section of a product called PeopleSmart and it was an additional product that was provided to PeopleSmart users. Because of that, there was no specific payment flow in the product. Also, it required different sets of information than the previous product.</p>
+			<p class="passage">Previously, IdentitySmart was a section of a product called PeopleSmart and it was an additional product that was provided to PeopleSmart users. Because of that, there was no specific payment flow in the product. Also, it required different sets of information than the previous product.</p>
 		</div>
 		<div class="narrow">
 			<h4 class="header left">Combined activation and checkout flow</h4>
-			<p class="summary passage left">It is important for the service coverage to be started as soon as the user submits the payment method. Therefore the first design was collecting personal information before the payment method was submitted. This flow was helpful to increase the activation rate. However, this was overburden the users asking for a number of information at once.</p>
+			<p class="passage">It is important for the service coverage to be started as soon as the user submits the payment method. Therefore the first design was collecting personal information before the payment method was submitted. This flow was helpful to increase the activation rate. However, this was overburden the users asking for a number of information at once.</p>
 		</div>
 		<div class="wide gap-btm">
 			<div id="slider2_container" style="position: relative; margin: 0 auto; width: 1800px; height: 428px;">
 				<!-- Slides Container -->	
 				<div u="slides" style="cursor: move; position: absolute; margin: 0 auto; width: 1800px; height: 428px;">
-					<div><img class="pad-zero" u="image" src="./ids/checkout/2_01.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/2_02.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/2_03.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/2_04.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/2_05.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/2_06.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/2_01.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/2_02.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/2_03.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/2_04.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/2_05.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/2_06.jpg"></div>
 				</div>
 				<!-- bullet navigator container -->
 				<div u="navigator" class="db05">
@@ -232,19 +232,19 @@ Please enjoy! -->
 		</div>
 		<div class="narrow">
 			<h4 class="header left">Separated activation and checkout flow</h4>
-			<p class="summary passage left">In the second design, activation flow and payment flow were separated. First users creates account, then submits the payment method. After this, users can access activation flow to start the monitoring service. In this flow, it is important to prompt users to finish the activation so that the full service coverage can start.</p>
-			<p class="summary passage left">Based on the A/B testing conducted, we decided to deliver the design with the separate activation flow. Here, the activation rate was doubled when users were provided with small sections of inputs. In this case, it was important to clearly indicate the progress of the activation flow.</p>
+			<p class="passage">In the second design, activation flow and payment flow were separated. First users creates account, then submits the payment method. After this, users can access activation flow to start the monitoring service. In this flow, it is important to prompt users to finish the activation so that the full service coverage can start.</p>
+			<p class="passage">Based on the A/B testing conducted, we decided to deliver the design with the separate activation flow. Here, the activation rate was doubled when users were provided with small sections of inputs. In this case, it was important to clearly indicate the progress of the activation flow.</p>
 		</div>
 		<div class="wide gap-btm">
 			<div id="slider1_container" style="position: relative; margin: 0 auto; width: 1800px; height: 428px;">
 				<!-- Slides Container -->	
 				<div u="slides" style="cursor: move; position: absolute; margin: 0 auto; width: 1800px; height: 428px;">
-					<div><img class="pad-zero" u="image" src="./ids/checkout/1_01.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/1_02.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/1_03.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/1_04.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/1_06.jpg"></div>
-					<div><img class="pad-zero" u="image" src="./ids/checkout/1_07.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/1_01.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/1_02.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/1_03.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/1_04.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/1_06.jpg"></div>
+					<div><img class="zero" u="image" src="./ids/checkout/1_07.jpg"></div>
 				</div>
 				<!-- bullet navigator container -->
 				<div u="navigator" class="db05">
