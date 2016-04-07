@@ -204,7 +204,10 @@ background-color:#2b3548;
 color:#a6a8ab;
 padding:8%;
 }
-
+#copyright {
+text-align:center;
+color:#FFF;
+}
 section {
 width:100%;
 padding:8% 0;
@@ -389,19 +392,6 @@ padding:0;
 
 #mobile-nav {
 display:none;
-}
-
-#linkedin {
-background-color:#0077B5;
-}
-#twitter {
-background-color:#55ACEE;
-}
-#dribbble {
-background-color:#ea4c89;
-}
-#github {
-background-color:#171515;
 }
 
 @media screen and (max-width:800px) {

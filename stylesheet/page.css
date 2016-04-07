@@ -300,6 +300,11 @@ width:40%;
 font-size:1.2em;
 line-height:1.7em;
 }
+.tag {
+font-size: 1em;
+line-height:1.4em;
+color: #999BA2;
+}
 .contents {
 margin-top: 0;/* overwrite */
 }
@@ -348,6 +353,13 @@ font: 16px 'Roboto', sans-serif;
 float:left;
 flex: 1;
 order: 1;
+}
+.stepli {
+padding: 8px;
+margin: 0 8px 0 0;
+text-align: center;
+font-weight: 600;
+font: 1em 'Roboto', sans-serif;
 }
 .paragraph {
 display:block;
