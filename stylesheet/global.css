@@ -1,3 +1,7 @@
+/* Typography import */
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 /* reset.css integrated start 03162016 */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -48,50 +52,57 @@ table {
 /* reset.css integrated end 03162016 */
 
 /* typography.css integrated start 03162016 */
-@import url(http://fonts.googleapis.com/css?family=Oswald:400|Roboto:300,400);
-h1, h2, h3, h4, h5{
+h1, h2, h3, h5{
 color: #232323;
 }
 h1 {
 float:left;
 display:inline-block;
-font-family:'Oswald', serif;
-font-size:1.2em;
-font-weight:400;
+font-family:'Lato', serif;
+font-weight: 700;
+font-size:1.112em;
 text-align:left;
 }
 h2 {
 margin: auto auto .4em auto;
 display:block;
-font-family:'Roboto',sans-serif;
+font-family:'Lato', serif;
+font-weight: 700;
 font-size:2em;
 line-height:1.4em;
-font-weight:400;
 text-align:left;
 }
 h3 {
 display:block;
-font-family:'Roboto',sans-serif;
+font-family:'Lato', serif;
+font-weight: 400;
 font-size:1.4em;
-line-height:1.5em;
+line-height:1.6em;
 margin: 4% 0;
-font-weight:400;
 text-align:left;
 }
 h4 {
 display:block;
-font-family:'Roboto',sans-serif;
+font-family:'Lato', serif;
+font-weight: 700;
 font-size:1.4em;
+color: #4C4F58;
 line-height:1.8em;
-font-weight:400;
-margin:2% auto;
+margin:2% auto .5% auto;
 }
 h5 {
+display:block;
+font-family:'Lato', serif;
+font-weight:400;
+text-align: left;
+font-size:1.4em;
+line-height:1.8em;
+margin:2% auto .5% auto;
 }
 h6 {
-font-family:'Roboto',sans-serif;
-font-weight:400;
+font-family: 'Lato', serif;
 font-size:1.4em;
+line-height: 1.6em;
 }
 p {
 font-family:'Roboto',sans-serif;
@@ -102,12 +113,10 @@ text-align:left;
 color:#4C4F58;
 }
 header {
-font-family:'Oswald', serif;
+font-family:'Lato', serif;
 font-size:1em;
 line-height:51px;
-font-weight:400;
 text-align:right;
-text-transform:uppercase;
 /* header it was separated */
 position:fixed;
 width:92%;
@@ -117,10 +126,13 @@ z-index:999;
 }
 
 .header {
+font-family:'Lato', serif;
 max-width: 960px;
-text-align: center;
+font-weight: 700;
+text-align: left;
+margin: 2% auto .5% auto;
 }
-.header, .summary {
+.summary {
 max-width: 960px;
 text-align: center;
 margin: 2% auto;
@@ -132,29 +144,26 @@ margin:0 8%;
 .contents {
 font-family:'Roboto',sans-serif;
 font-weight:300;
-font-size:1.2em;
-line-height:1.7em;
+font-size:1.112em;
+line-height:1.612em;
 margin:4% auto;
 }
 
 .white {
 color:#fff;
 }
-.dark {
-color:#232323;
-}
 .red {
 color:#FF5757;
 }
 .bold {
-font-weight:400;
+font-weight:500;
 }
 .accent {
 width:60%;
 font-family:'Roboto',sans-serif;
 font-weight:300;
-font-size:1.6em;
-line-height:1.6em;
+font-size:1.4em;
+line-height:1.8em;
 text-align:center;
 color:#FF5757;
 margin:4% auto;
@@ -201,7 +210,6 @@ background-color:#f7f7f7;
 }
 footer {
 background-color:#2b3548;
-color:#a6a8ab;
 padding:8%;
 }
 #copyright {
@@ -210,7 +218,7 @@ color:#FFF;
 }
 section {
 width:100%;
-padding:8% 0;
+padding:6% 0;
 overflow:hidden;
 position:relative;/* Just added if it causes problem remove it */
 }
@@ -309,7 +317,7 @@ display:inline-block;
 list-style-type: circle;
 text-align:left;
 font-family:'Roboto',sans-serif;
-font-size:1.2em;
+font-size:1.112em;
 line-height:1.8em;
 }
 .nav ul {
@@ -327,20 +335,21 @@ color:#232323;
 text-decoration:none;
 }
 a.link {
-color:#668bff;
+color:#ff5755;
 }
 
 p a {
+color:#ff5755;
 text-decoration:underline;
 }
 p a:hover {
-color:#668bff;
+color:#4C4F56;
 }
 
 li.active a {
 border-radius:2px;
-border-bottom:4px solid #668bff;
-color:#668bff;
+border-bottom:4px solid #ff5755;
+color:#ff5755;
 transition:.4s;
 }
 .nav ul li a {
@@ -348,7 +357,7 @@ padding:14px 14px 10px 14px;
 }
 .nav ul li a:hover {
 border-radius:2px;
-color:#668bff;
+color:#ff5755;
 -webkit-transition:.4s;
 transition:.4s;
 }
@@ -360,11 +369,11 @@ position:relative;
 display:inline-block;
 width:100%;
 font-family:'Roboto',sans-serif;
-font-size:1.2em;
-font-weight:400;
+font-size:1.4em;
+font-weight:500;
 text-align:center;
 margin:0 auto;
-color: #668bff;
+color: #ff5755;
 cursor:pointer;
 }
 .btn-page:hover {
@@ -453,8 +462,8 @@ padding:8% 2%;
 }
 
 .contents {
-font-size:1.2em;
-line-height:1.7em;
+font-size:1.112em;
+line-height:1.612em;
 }
 
 .bged {
@@ -491,7 +500,7 @@ text-align:center;
 display:block;
 margin-top:6px;
 width:92%;
-color:#668bff;
+color:#00c6ff;
 position:relative;
 cursor:pointer;
 }
@@ -513,7 +522,7 @@ transition:.4s;
 li.active a {
 border-radius:2px;
 border-top:0;
-color:#668bff;
+color:#ff5755;
 background-color:transparent;
 transition:.4s;
 }
