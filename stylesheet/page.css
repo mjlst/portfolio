@@ -189,15 +189,15 @@ left: -60px;
 right: -60px;
 }
 
-.ba12l {color:rgba(247, 247, 247, .4); background-color:rgba(247,247,247, .1);}
-.ba12l:hover {color:rgba(247, 247, 247, .7);}
-.ba12r {color:rgba(247, 247, 247, .4); background-color:rgba(247,247,247, .1);}
+.ba12l {color:#F4F5F6; background-color:#D9DADD;}
+.ba12l:hover {color:#999BA2;}
+.ba12r {color:#F4F5F6; background-color:#D9DADD;}
 .ba12r:hover {color:rgba(247, 247, 247, .7);}
 
-.da12l {color:rgba(43, 53, 72, .4); background-color:rgba(43, 53, 72, .1);}
-.da12l:hover {color:rgba(43, 53, 72, .7);}
-.da12r {color:rgba(43, 53, 72, .4); background-color:rgba(43, 53, 72, .1);}
-.da12r:hover {color:rgba(43, 53, 72, .7);}
+.da12l {color:#F4F5F6; background-color:#D9DADD;}
+.da12l:hover {color:#999BA2;}
+.da12r {color:#F4F5F6; background-color:#D9DADD;}
+.da12r:hover {color:rgba(247, 247, 247, .7);}
 /*jssor slider style guide(https://github.com/jssor/slider) ends*/
 
 .visible {
@@ -297,8 +297,8 @@ line-height:1.612em;
 padding-bottom: 2%;
 }
 .tag {
-font-size: .9em;
-line-height:1.4em;
+font-size: 1em;
+line-height:1.5em;
 color: #999BA2;
 }
 .contents {
@@ -322,7 +322,7 @@ padding-top: 4%;
 font-family:'Lato', serif;
 font-size:1.4em;
 font-weight:700;
-color:#4C4F58;
+color:#232323;
 text-align:center;
 cursor:pointer;
 }
