@@ -25,7 +25,36 @@ Please enjoy! -->
 
 	</script>
 	<style>
-
+.wrapper {
+max-width:960px;
+overflow:hidden;
+box-shadow:0 0 2px rgba(0,0,0,.2);
+text-align:center;
+background-color:#fff;
+margin:4% auto;
+padding:4%;
+}
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+.wrapper {
+width:92%;
+margin:2%;
+padding:2%;
+}
+}
+@media screen and (max-width: 600px) {
+.wrapper {
+width:92%;
+margin:2%;
+padding:8% 2%;
+}
+}
+body.index {
+background: linear-gradient(100deg, #f7f7f7 62%, #CCF8FF 40%);
+background: -webkit-linear-gradient(100deg, #f7f7f7 62%, #CCF8FF 40%);
+background: -moz-linear-gradient(100deg, #f7f7f7 62%, #CCF8FF 40%);
+background: -o-linear-gradient(100deg, #f7f7f7 62%, #CCF8FF 40%);
+background: -ms-linear-gradient(100deg, #f7f7f7 62%, #CCF8FF 40%);
+}
 p.label::before {
 content:"";
 height:2px;
@@ -132,12 +161,22 @@ opacity:1;
 -webkit-transform:translate3d(0,0,0) scale(1);
 transform:translate3d(0,0,0) scale(1);
 }
-.grtng {
+.icon {
+display:inline-block;
+width:44px;
+height:44px;
+border-radius:50%;
+line-height:58px;
+color:#BFC0C4;
+margin:8px;
+margin-top:6%;
+}
+#intro {
 width:56%;
 max-width: 450px;
 }
-.grtng > p.ntron {font-size:1.112em;margin-top:2%;}
-.ntron {
+#intro > p.load {font-size:1.112em;margin-top:2%;}
+.load {
 opacity: 0;
 }
 #ntr {
@@ -241,7 +280,7 @@ margin:0;padding:0;
 #ntro {
 padding-top:10%;
 }
-h2.greetings {
+h2#greetings {
 margin:0;line-height:1.7em;
 }
 .adj {
@@ -294,11 +333,15 @@ margin:20px 0;
 	figure.block p.label {
 	font-size: 1em;
 	}
-	.grtng, #prfl {
+	#intro, #prfl {
 	margin: 0 auto;
 	}
 	.socialblck {
 	margin-top: 0;
+	}
+	.box.index {
+	width: 100%;
+	padding: 0;
 	}
 	.box.index > img {
 	margin: 0 auto;
@@ -330,12 +373,12 @@ margin:20px 0;
 	font-size:1em;
 	opacity:0;
 	}
-	.grtng, #prfl {
+	#intro, #prfl {
 	margin: 0 auto;
 	}
 }
 @media screen and (max-width: 600px) {
-	h2.greetings {
+	h2#greetings {
 	font-size: 2em;
 	}
 	.coverup {
@@ -363,10 +406,10 @@ margin:20px 0;
 	font-size:1em;
 	opacity:0;
 	}
-	.grtng {
+	#intro {
 	width:90%;
 	}
-	.grtng, #prfl {
+	#intro, #prfl {
 	margin: 0 auto;
 	}
 }
@@ -375,42 +418,50 @@ margin:20px 0;
 <body class="index">
 <!-- Intro division -->
 <div id="ntr" data-type="background" data-speed="10">
-	<div class="box index flex" id="ntro">
-		<div class="item ntron" id="prfl"><img src="./images/profile_2016.png"></div>
-		<div class="grtng item">
-			<h2 class="greetings ntron">Hello, I'm Minjong. <br>I'm a <span class="typed"></span>.</h2>
-			<p class="ntron">I'm a San Francisco based UX Designer. I endeavor to design intuitive and valuable user experience.
- <br>Check out my <a href="./general/resume_minjonglee.pdf" target="_blank">resume</a> and feel free to <a href="mailto:mjlst89@gmail.com">shoot me an e-mail</a>.
+	<div id="ntro" class="box index flex">
+		<div id="prfl" class="item load"><img src="./images/profile_2016.png"></div>
+		<div id="intro" class="item">
+			<h2 id="greetings" class="load">Hello, I'm Minjong. <br>I'm a <span class="typed"></span>.</h2>
+			<p class="load">I'm a San Francisco based UX Designer. I endeavor to design intuitive and valuable user experience.<br>Check out my <a href="./general/resume_minjonglee.pdf" target="_blank">resume</a> and feel free to <a href="mailto:mjlst89@gmail.com">shoot me an e-mail</a>.
 		</div>
 	</div>
-			<div class="ntron" id="scl">
-				<div class="socialblck">
-					<div class="icontip">She connects with professionals.</div> 
-					<a class="sociallnk" href="https://www.linkedin.com/in/minjonglee/" target="_blank"><div class="icon"><i class="fa fa-linkedin fa-2x"></i></div></a>
-				</div>
-				<div class="socialblck">
-					<div class="icontip">She tweets excitements.</div>
-					<a class="sociallnk" href="https://twitter.com/mjlst/" target="_blank"><div class="icon"><i class="fa fa-twitter fa-2x"></i></div></a>
-				</div>
-				<div class="socialblck">
-					<div class="icontip">She codes ideas.</div>
-					<a class="sociallnk" href="https://github.com/mjlst" target="_blank"><div class="icon"><i class="fa fa-github fa-2x"></i></div></a>
-				</div>
-				<div class="socialblck">
-					<div class="icontip">She rebounds projects.</div>
-					<a class="sociallnk" href="https://dribbble.com/mjlst" target="_blank"><div class="icon"><i class="fa fa-dribbble fa-2x"></i></div></a>		
-				</div>
-				<div class="socialblck">
-					<div class="icontip">She shares insights.</div>
-					<a class="sociallnk" href="https://medium.com/@minjonglee" target="_blank"><div class="icon"><i class="fa fa-medium fa-2x"></i></div></a>
-				</div>
-			</div>
-			<a href="#prjcts"><p class="btn-intro ntron">Curious about her work?<i class="fa fa-angle-down" style="margin-left:12px;"></i></p></a>		
+	<div id="scl" class="load">
+		<div class="socialblck">
+			<div class="icontip">She connects with professionals.</div> 
+			<a class="sociallnk" href="https://www.linkedin.com/in/minjonglee/" target="_blank">
+				<div class="icon"><i class="fa fa-linkedin fa-2x"></i></div>
+			</a>
+		</div>
+		<div class="socialblck">
+			<div class="icontip">She tweets excitements.</div>
+			<a class="sociallnk" href="https://twitter.com/mjlst/" target="_blank">
+				<div class="icon"><i class="fa fa-twitter fa-2x"></i></div>
+			</a>
+		</div>
+		<div class="socialblck">
+			<div class="icontip">She codes ideas.</div>
+			<a class="sociallnk" href="https://github.com/mjlst" target="_blank">
+				<div class="icon"><i class="fa fa-github fa-2x"></i></div>
+			</a>
+		</div>
+		<div class="socialblck">
+			<div class="icontip">She rebounds projects.</div>
+			<a class="sociallnk" href="https://dribbble.com/mjlst" target="_blank">
+				<div class="icon"><i class="fa fa-dribbble fa-2x"></i></div>
+			</a>
+		</div>
+		<div class="socialblck">
+			<div class="icontip">She shares insights.</div>
+			<a class="sociallnk" href="https://medium.com/@minjonglee" target="_blank">
+				<div class="icon"><i class="fa fa-medium fa-2x"></i></div>
+			</a>
+		</div>
+	</div>
+	<a href="#prjcts"><p class="btn-intro load">Curious about her work?<i class="fa fa-angle-down" style="margin-left:12px;"></i></p></a>		
 </div>
 <!-- Portfolio division -->
 <section id="prjcts" class="wrapper">
 	<div class="ttl">Projects</div>
-<!-- 	<p class="accent">more projects that are proudly presented by Minjong</p> -->
 		<div class="coverup">
 			<div class="row">
 				<div class="column">
@@ -418,7 +469,7 @@ margin:20px 0;
 					<figure class="block" id="rm">
 						<img src="./general/ids_sq_hlf.png" alt="image">
 						<figcaption>
-							<h6>identitysmart.com - Web, Mobile<br>Online Monitoring Service</h6>
+							<h6>identitysmart.com &mdash; Web, Mobile<br>Online Monitoring Service</h6>
 							<p class="label">Prototyping, Usability Testing, <br>High Fidelity Mockup</p>
 						</figcaption>
 					</figure>
@@ -431,7 +482,7 @@ margin:20px 0;
 					<figure class="block" id="tw">
 						<img src="./general/rigit_sq.png" alt="image">
 						<figcaption>
-							<h6>Rigit - iOS<br>Ambulance Checklist Application</h6>
+							<h6>Rigit &mdash; iOS<br>Ambulance Checklist Application</h6>
 							<p class="label">User Research, UI Design, Prototyping</p>
 						</figcaption>
 					</figure>
@@ -444,7 +495,7 @@ margin:20px 0;
 						<figure class="block" id="bookclip">
 						<img src="./general/bk_sq_hlf.png" alt="image">
 							<figcaption>
-								<h6>Bookclip - iOS<br>Mobile Library Management System</h6>
+								<h6>Bookclip &mdash; iOS<br>Mobile Library Management System</h6>
 								<p class="label">User Research, Interaction Design, <br>Prototyping, High Fidelity Mockup</p>
 							</figcaption>
 						</figure>
@@ -458,7 +509,7 @@ margin:20px 0;
 					<figure class="block" id="rm">
 						<img src="./general/rm_sq_hlf.png" alt="image">
 						<figcaption>
-							<h6>Rivermatters - Web<br>Exhibition Marketing Website</h6>
+							<h6>Rivermatters &mdash; Web<br>Exhibition Marketing Website</h6>
 							<p class="label">User Research, Interaction Design, <br>Prototyping, High Fidelity Mockup</p>
 						</figcaption>
 					</figure>
@@ -471,7 +522,7 @@ margin:20px 0;
 					<figure class="block" id="gd">
 						<img src="./general/wander_sq_hlf.png" alt="image">
 						<figcaption>
-							<h6>Wander - iOS, Web<br>Travel Planning Application</h6>
+							<h6>Wander &mdash; iOS, Web<br>Travel Planning Application</h6>
 							<p class="label">User Research, Interaction Design<br>- Coming Soon -</p>
 						</figcaption>
 					</figure>
@@ -497,7 +548,7 @@ margin:20px 0;
 					<figure class="block" id="ww">
 						<img src="./general/bcapp_sq.png" alt="image">
 						<figcaption>
-							<h6>Contraception Guide - Mobile, iOS</h6>
+							<h6>Contraception Guide &mdash; Mobile, iOS</h6>
 							<p class="label">UI Mockup & Icon Design</p>
 						</figcaption>
 					</figure>
@@ -590,7 +641,7 @@ $(document).ready(function () {
 	});
 	// Fade intro elements in 
 	var time = 0;
-	$('.ntron').each(function() {
+	$('.load').each(function() {
 		$(this).delay(time).animate({'opacity':1}, 500);
 		time += 300;
 	});
