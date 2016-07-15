@@ -296,8 +296,8 @@ img.block {
 width:40%;
 }
 .passage {
-font-size:1.112em;
-line-height:1.612em;
+font-size:1.142em;
+line-height:1.712em;
 padding-bottom: 2%;
 }
 .tag {
@@ -367,7 +367,7 @@ color: #4C4F58;
 text-indent: 0;
 text-align:left;
 font-family:'Roboto',sans-serif;
-font-size:1.112em;
+font-size:1.142em;
 line-height:1.8em;
 font-weight: 300;
 }

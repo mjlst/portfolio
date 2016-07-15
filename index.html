@@ -129,7 +129,7 @@ opacity:0.1;
 transform:scale(1.08);
 }
 figure.block h6 {
-margin-top:1em;
+margin-top:1.132em;
 font-size: 1.1em;
 color: #fff;
 opacity:0;
@@ -141,7 +141,7 @@ transform:translate3d(0,20px,0);
 figure.block p.label {
 padding:.5em 0;
 margin:0 auto;
-font-size: 1em;
+font-size: 1.132em;
 text-align: center;
 opacity:0;
 color: #fff;
@@ -174,9 +174,11 @@ margin-top:6%;
 }
 #intro {
 width:56%;
-max-width: 450px;
+height:100%;
+max-width: 600px;
+text-align: left;
 }
-#intro > p.load {font-size:1.112em;margin-top:2%;}
+#intro > p.load {font-size:1.212em;line-height:1.712em;margin-top:2%;margin-bottom:30px;}
 .load {
 opacity: 0;
 }
@@ -212,11 +214,13 @@ width: 240px;
 padding: 12px 8px;
 color: #fff;
 font-family:'Roboto',sans-serif;
+text-align: center;
 font-weight: 300;
-font-size: 1em;
+font-size: 1.132em;
 border-radius: 4px;
 left: -97px;
 opacity: 0;
+z-index:5;
 }
 .icontip::after {
 content:'';
@@ -251,29 +255,48 @@ border-top: 6px solid #E94C88;
 border-top: 6px solid #0BE370;
 }
 .btn-intro {
-margin:4% 0;
+margin:0;
+margin-top: 8%;
+margin-bottom: 1%;
 display:inline-block;
-font-family:'Roboto',sans-serif;
-font-size:1.5em;
-font-weight:400;
+font-family:'Lato',sans-serif;
+font-size:1.212em;
+/* border-bottom: 1px solid #ff5757; */
+font-weight:300;
 text-align:center;
 color: #FF5757;
 }
+/* 
 .btn-intro:hover {
 color: #00C6FF;
 transition: .3;
 -webkit-transition: .3;
 }
+ */
 #prfl {
-background-color:#fff;
-width:180px;
-height:180px;
-border:1px solid #eee;
-border-radius:50%;
+width:230px;
+height:300px;
+position:relative;
 margin:0 8%;
+z-index:1;
+}
+svg.line1 {
+position:absolute;
+left:20px;
+top:20px;
+z-index: -1;
+}
+.line2 {
+margin-bottom: 20px;
 }
 #prfl > img {
-width:86%;margin:7%;
+opacity: 0;
+margin-top:0;
+width:230px;
+position:absolute;
+left:21px;
+top:21px;
+/* box-shadow: 2px 2px 8px rgba(0,0,0,.4); */
 }
 
 #scl {
@@ -285,6 +308,9 @@ padding-top:10%;
 }
 h2#greetings {
 margin:0;line-height:1.7em;
+font-size:2.512em;
+font-weight: 300;
+margin-bottom: 20px;
 }
 .adj {
 font-size: 60%;
@@ -293,12 +319,12 @@ padding-top:4px;
 }
 .quote {
 color: #00C6FF;
-font-family:'Roboto',sans-serif;
-font-weight:400;
+font-family:'Lato',sans-serif;
+font-weight:300;
 width: 90%;
 margin: 0 auto;
-font-size:1.4em;
-line-height:1.6em;
+font-size:1.6em;
+line-height:2em;
 text-align:center;
 }
 .cmng {
@@ -331,10 +357,10 @@ margin:20px 0;
 	padding-right: 5px;
 	}
 	figure.block h6 {
-	font-size: 1em;
+	font-size: 1.132em;
 	}
 	figure.block p.label {
-	font-size: 1em;
+	font-size: 1.132em;
 	}
 	#intro, #prfl {
 	margin: 0 auto;
@@ -349,6 +375,10 @@ margin:20px 0;
 	.box.index > img {
 	margin: 0 auto;
 	}
+	#intro {
+	width: 100%;
+	}
+	
 }
 @media screen and (max-width: 767px) and (min-width: 601px) {
 	.coverup {
@@ -370,14 +400,17 @@ margin:20px 0;
 	padding-right: 5px;
 	}
 	figure.block h6 {
-	font-size: 1em;
+	font-size: 1.132em;
 	}
 	figure.block p.label {
-	font-size:1em;
+	font-size:1.132em;
 	opacity:0;
 	}
 	#intro, #prfl {
 	margin: 0 auto;
+	}
+	#intro {
+	width: 100%;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -404,10 +437,10 @@ margin:20px 0;
 	padding-right: 2%;
 	}
 	figure.block h6 {
-	font-size: 1em;
+	font-size: 1.132em;
 	}
 	figure.block p.label {
-	font-size:1em;
+	font-size:1.132em;
 	opacity:0;
 	}
 	#intro {
@@ -416,6 +449,14 @@ margin:20px 0;
 	#intro, #prfl {
 	margin: 0 auto;
 	}
+	#prfl {
+	width: 140px;
+	height: 210px;
+	}
+	svg.line1 {
+	width: 140px;
+	height: 140px;	
+	}
 }
 	</style>	
 </head>
@@ -423,10 +464,22 @@ margin:20px 0;
 <!-- Intro division -->
 <div id="ntr" data-type="background" data-speed="10">
 	<div id="ntro" class="box index flex">
-		<div id="prfl" class="item load"><img src="./images/profile_2016.png"></div>
-		<div id="intro" class="item">
-			<h2 id="greetings" class="load">Hello, I'm Minjong. <br>I'm a <span class="typed"></span>.</h2>
-			<p class="load">I'm a San Francisco based UX Designer. I endeavor to design intuitive and valuable user experience.<br>Check out my <a href="./general/resume_minjonglee.pdf" target="_blank">resume</a> and feel free to <a href="mailto:mjlst89@gmail.com">shoot me an e-mail</a>.
+		<div id="prfl" class="item">
+			<svg class="line1" width="232" height="232" viewBox="87 350 252 252" xmlns="http://www.w3.org/2000/svg">
+				<g class="soen">
+					<path stroke="#00C6FF" fill="none" d="M338 351v250H88V351z"/>
+				</g>
+			</svg>
+			<img src="./images/minj_prfl.png">
+		</div>
+		<div id="intro" class="item load">
+			<svg class="line2" width="85px" height="4px" viewBox="4994 320 85 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<g class="soen">
+					<path stroke="#232323" stroke-width="2" fill="none" d="M4995.47852,322 L5077.47852,322" ></path>
+				</g>
+			</svg>
+			<br><h2 id="greetings">Hello, I'm Minjong. <br>I'm a <span class="typed"></span>.</h2>
+			<p class="load">I'm a San Francisco based UX Designer. I endeavor to design intuitive and valuable user experience. If you want to learn more about me, please check out my <a href="./general/resume_minjonglee.pdf" target="_blank">resume</a> and feel free to <a href="mailto:mjlst89@gmail.com">shoot me an e-mail</a>.
 			<div id="scl" class="item load">
 				<div class="socialblck">
 					<div class="icontip">She connects with professionals.</div> 
@@ -461,7 +514,15 @@ margin:20px 0;
 			</div>
 		</div>
 	</div>
-	<a href="#prjcts"><p class="btn-intro load">Curious about her work?<i class="fa fa-angle-down" style="margin-left:12px;"></i></p></a>		
+	<a href="#prjcts"><p class="btn-intro load">Scroll to view projects</p>	</a>	
+		<svg class="line3" width="10" height="88" viewBox="715 928 10 88" xmlns="http://www.w3.org/2000/svg" style="display:block;margin: 0 auto;">
+		  <g fill="none" fill-rule="evenodd" transform="translate(715 929)">
+				<g class="soen">		  
+					<path d="M5 0v82" stroke="#FF5757" stroke-width="1" stroke-linecap="square" stroke-linejoin="round"/>
+				</g>
+			<circle fill="#FF6565" cx="5" cy="82" r="3"/>
+		  </g>
+		</svg>	
 </div>
 <!-- Portfolio division -->
 <section id="prjcts" class="wrapper">
@@ -627,31 +688,9 @@ var jump = function(e) {
 	} else {
 		var target = location.hash;
 	}
-	// Animate scrolling
-	$('html, body').animate( {
-		// Get the top position of the target element
-		scrollTop: $(target).offset().top
-	},900,function() {
-		location.hash = target;
-	});
 }
-$(document).ready(function () {
-	//typed.js installation
-	$(function(){
-			$(".typed").typed({
-			strings: ["Product Designer", "Rapid Prototyper", "Team Player", "UX Designer"],
-			typeSpeed: 0.5
-		});
-	});
-	// Fade intro elements in 
-	var time = 0;
-	$('.load').each(function() {
-		$(this).delay(time).animate({'opacity':1}, 500);
-		time += 300;
-	});
-	// ** Fade the website in **
-	$('body').css('opacity', '0').fadeTo(600, 1, 'swing');
 
+$(document).ready(function () {
 	// ** Jump **
 	$('a[href^=#]').bind("click", jump);
 	if (location.hash) {
@@ -748,6 +787,69 @@ $(document).ready(function () {
 			} }
 	]);
 	activated();
+
+// This part is referenced from : https://jakearchibald.com/2013/animated-line-drawing-svg/ 
+function toArray(arr) {
+	return Array.prototype.slice.call(arr);
+}
+
+var svgline = document.querySelector('.soen');
+svgline.parentNode.style.display = 'block';
+svgline.style.visibility = 'hidden';
+
+var allLine = document.querySelectorAll('path');
+
+function draw() {
+	svgline.style.visibility = '';
+	var paths = toArray(allLine);
+	var begin = 0;
+	var durations = paths.map(function(path) {
+		var length = path.getTotalLength();
+		var className = path.getAttribute('class') || '';
+		path.style.strokeDasharray = length + ' ' + length;
+		path.style.strokeDashoffset = length + 0.01; //to remove the dot
+	
+		if (className == 'shrt') {
+		return Math.pow(length, 0.5) * 0.02;
+		}
+		else {
+		return Math.pow(length, 0.5) * 0.06;
+		}
+	});
+	
+//triggering the animation
+paths[0].getBoundingClientRect();
+
+paths.forEach(function(path, i) {
+	path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset ' + durations[i] + 's ' + begin + 's ease-in-out';
+	path.style.strokeDashoffset = '0';
+	begin += durations[i] + 0.1;
+	});
+}
+window.addEventListener('load', draw);
+// ... thanks to Jake Archibald
+
+	// Fade intro elements in 
+	var time = 2000;
+	$('.load').each(function() {
+		$(this).delay(time).animate({'opacity':1}, 500);
+		time += 500;
+		//typed.js installation
+		$(function(){
+			$(".typed").delay(600).typed({
+			strings: ["Interaction Designer", "Rapid Prototyper", "UX Designer", "Team Player", "Product Designer"],
+			typeSpeed: 0.5
+			});
+		});
+	});
+	// ** Fade the website in **
+	$('body').css('opacity', '0').fadeTo(600, 1, 'swing');
+	$('#prfl > img').delay(1500).animate({
+		'top': '0px',
+		'left': '0px',
+		'opacity': 1
+	}, 600);
+
 });
 </script>
 </body>
